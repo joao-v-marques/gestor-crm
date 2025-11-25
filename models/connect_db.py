@@ -27,7 +27,7 @@ def conectar_db():
     except Exception as e:
         logging.error(e)
         return "Houve um problema na conexão com o banco de dados"
-        
+
 def dict_fetchall(cursor):
     colunas = [desc[0] for desc in cursor.description]
     return [dict(zip(colunas, linha)) for linha in cursor.fetchall()]
