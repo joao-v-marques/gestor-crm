@@ -11,4 +11,4 @@ def config_bp(app):
     app.register_blueprint(bp_login)
 
 def connect_database():
-    conectar_db
+    conectar_db()
